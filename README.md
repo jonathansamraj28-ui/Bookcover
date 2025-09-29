@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-## Date:
+## Date:29:09:2025
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -31,9 +31,92 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Cover</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Georgia', serif;
+    }
+
+    .book-cover {
+      width: 400px;
+      height: 600px;
+      background: rgb(231, 220, 220);
+      border: 2px solid #333;
+      padding: 40px 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2e2e2e;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin-top: 10px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .image {
+      flex: 1;
+      background: url('https://www.microcapobserver.com/root_upld/general-news/2018/10/ART436906631396675/org_18367201810171017.jpg') center/contain no-repeat;
+      margin: 30px 0;
+    }
+
+    .author {
+      font-size: 18px;
+      text-align: center;
+      color: #0b0909;
+      margin-top: 20px;
+    }
+
+    .line {
+      height: 2px;
+      background: #333;
+      width: 50px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="book-cover">
+    <div>
+      <div class="title">VADACHENNAI</div>
+      <div class="line"></div>
+      <div class="subtitle"></div>
+    </div>
+    <div class="image">
+        <img src="https://www.microcapobserver.com/root_upld/general-news/2018/10/ART436906631396675/org_18367201810171017.jpg" alt="Book Image" style="width:100%; height:100%; object-fit:contain;">
+    </div>
+    <div class="author">BY VETRIMARAN</div>
+  </div>
+</body>
+</html>
+```
+
 
 
 ## OUTPUT:
+![alt text](<Screenshot 2025-09-29 104420.png>)
 
 
 ## RESULT:
